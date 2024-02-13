@@ -2,7 +2,7 @@
     width: 360px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 12px 24px 0px;
     flex-direction: column;
-    border-radius: 15px;
+    border-radius: 10px;
     overflow: hidden;
     background-color: rgb(255, 255, 255);
     transform: translate3d(0px, 0px, 0px);
@@ -39,7 +39,7 @@
 
 @media (max-width: 480px) {
     .root {
-        bottom: 85px;
-        width: 270px;
+        width: 320px;
+        max-width: calc(100% - 50px);
     }
 }

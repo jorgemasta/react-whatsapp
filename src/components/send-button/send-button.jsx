@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import styles from './send-button.module.css';
+import { FaWhatsapp } from 'react-icons/fa';
 
 const defaultProps = {
-    sendButtonText: 'Send',
+    sendButtonText: 'Start Chat',
     inputPlaceHolder: 'Type a message',
 };
 
@@ -22,19 +23,10 @@ const SendButton = ({
         setMessage('');
     };
 
-    const handleChange = (e) => {
-        setMessage(e.target.value);
-    };
-
     return (
         <div className={styles.root}>
-            <input
-                placeholder={inputPlaceHolder}
-                className={styles.input}
-                onChange={handleChange}
-                value={message}
-            />
             <button className={styles.button} onClick={handleClick}>
+                <FaWhatsapp />
                 {sendButtonText}
             </button>
         </div>

@@ -1,15 +1,16 @@
 .root {
     background-color: rgb(9, 94, 84);
     display: flex;
+    padding: 20px 16px;
 }
 
 .close_btn {
     color: #f0ffffa1;
     cursor: pointer;
-    font-size: 1.5em;
+    font-size: 1em;
     position: absolute;
-    right: 10px;
-    top: 10px;
+    right: 8px;
+    top: 8px;
 }
 
 .logo {
@@ -20,11 +21,33 @@
     color: cadetblue;
     display: flex;
     font-size: 2em;
-    height: 45px;
-    margin: 5px;
+    height: 52px;
     justify-content: center;
-    padding: 10px;
-    width: 45px;
+    width: 52px;
+    background-color: #f7f7f7;
+    position: relative;
+}
+
+.logo::before {
+    content: "";
+    bottom: 0px;
+    right: 0px;
+    width: 12px;
+    height: 12px;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    background-color: rgb(74, 213, 4);
+    display: block;
+    border: 2px solid rgb(9, 94, 84);
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
 }
 
 .texts {

@@ -8,7 +8,6 @@
 }
 
 .message {
-    padding: 7px 14px 6px;
     background-color: rgb(255, 255, 255);
     border-radius: 0px 8px 8px;
     position: relative;
@@ -16,22 +15,23 @@
     transform-origin: center top;
     box-shadow: rgba(0, 0, 0, 0.13) 0px 1px 0.5px;
     margin-top: 4px;
-    max-width: calc(100% - 120px);
+    max-width: 80%;
+    width: fit-content;
 }
 
-.message_title {
-    font-size: 13px;
-    font-weight: 700;
-    line-height: 18px;
-    color: rgba(0, 0, 0, 0.4);
+.message_wrapper {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
 }
 
 .message_body {
     font-size: 14px;
     line-height: 19px;
     margin-top: 4px;
-    color: rgb(17, 17, 17);
+    color: #111B21;
     white-space: pre-wrap;
+    padding: 7px 14px 6px;
 }
 
 .triangle_top_right {
@@ -49,8 +49,10 @@
 .message_time {
     display: flex;
     margin-top: 4px;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 16px;
     color: rgba(17, 17, 17, 0.5);
     justify-content: flex-end;
+    align-self: flex-end;
+    padding: 2px 6px;
 }

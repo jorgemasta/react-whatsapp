@@ -12,6 +12,8 @@ const WaButton = () => {
 
     return (
         <div className={styles.root} onClick={handleOpen}>
+            <span className={styles.hidden}>Chat</span>
+            <span className={styles.bubble}></span>
             <FaWhatsapp />
         </div>
     );

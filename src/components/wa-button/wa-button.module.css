@@ -7,38 +7,38 @@
   color: rgb(79, 206, 93);
   cursor: pointer;
   display: flex;
-  font-size: 2em;
-  height: 64px;
+  font-size: 2.5em;
+  height: 68px;
   justify-content: center;
   outline: transparent;
   user-select: none;
-  width: 64px;
+  width: 68px;
   -webkit-box-align: center;
   -webkit-box-pack: center;
   position: fixed;
   bottom: 25px;
   right: 25px;
   transition: 0.2s ease;
-
 }
 
-.root:hover {
-  background-color: #5ad167;
+.hidden {
+  display: none;
 }
 
-.root:hover svg {
-  fill: #fff;
+.root::before {
+  content: "";
+  box-sizing: border-box;
+  z-index: 1;
+  background-color: rgb(255, 0, 0);
+  border-radius: 50%;
+  height: 10px;
+  position: absolute;
+  width: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 12px;
+  top: 4px;
+  right: 4px;
 }
 
-/*
-    ##Device = Most of the Smartphones Mobiles (Portrait)
-    ##Screen = B/w 320px to 479px
-  */
-
-@media (max-width: 480px) {
-  .root {
-    width: 48px;
-    height: 48px;
-    font-size: 1.5em;
-  }
+.root:active {
+  transform: scale(0.9);
 }

@@ -1,8 +1,8 @@
 {
   "name": "react-whatsapp",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "WhatsApp chat widget for your website",
-  "author": "ann0nip",
+  "author": "jorgemasta",
   "license": "MIT",
   "repository": "@masta-labs/react-whatsapp",
   "main": "dist/index.js",
